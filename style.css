@@ -1,0 +1,287 @@
+@font-face 
+{
+    font-family: 'Manrope';
+    src: url('Manrope/Manrope-Regular.ttf') format('truetype');
+}
+*{
+font-family: "Manrope";
+}
+
+.share_pannel_mobile {display: none;}
+.share_content_mobile {display: none;}
+
+.share_content_desktop {display: none;}
+.share_pannel{display: none;} 
+
+.attribution{position: absolute; bottom:0px;}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    
+    background-color: hsl(210, 46%, 95%);
+}
+main
+{
+    display: flex;
+    justify-content: flex-start;
+    
+    width: 50%;
+    height: 35%;
+    min-width: 720px;
+    min-height: 300px;
+
+    padding: 0; margin: 0;
+    
+    border-radius: 1rem;
+    background-color: white;
+} 
+
+.img_drawers
+{
+    background-image: url("images/drawers.jpg");
+    background-size: cover;
+    width: 42%;
+    border-radius: 1rem 0px 0px 1rem;
+} 
+
+.right_pannel
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 58%;
+}
+
+article
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    padding: 5%;
+}
+article h1
+{
+    align-self: flex-start;
+
+    margin: 0;
+    margin-bottom: 4%;
+    width: 95%;
+
+    opacity: 0.8;
+    font-size: 1.25em;
+}
+article p
+{
+    margin: 0;
+    margin-bottom: 5%;
+
+    font-size: 14px;
+    line-height: 1.5em;
+    opacity: 0.7;
+}
+
+.author_pannel
+{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+   
+    width: 90%;
+}
+.michelle_pp
+{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 5%;
+}
+.author_infos
+{
+    margin-right: auto;
+}
+
+.author_infos h4
+{   
+    margin: 0;
+    margin-bottom: 5%;
+
+    font-size: 0.8em;
+    line-height: 1em;
+}
+.author_infos div
+{
+    font-size: 0.8em;
+    opacity: 0.7;
+}
+.share_btn
+{
+    width: 15px;
+    height: 15px;
+    padding: 3%;
+
+    border-radius: 50%;
+    background-color: hsl(210, 46%, 95%);
+}
+.share_pannel
+{
+    display: none;
+    position: relative;
+}
+.share_content_desktop
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 220px;
+    height: 50px;
+
+    position: absolute;
+    right: -90px;
+    top: -100px; 
+
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 0.6rem;
+    box-shadow: 0px 5px 10px rgb(221, 221, 221);
+}
+#share_txt
+{
+    color: white;
+    opacity: 0.6;
+
+    font-size: 0.8em;
+    letter-spacing: 5px;
+}
+.triangle_shape
+{
+    position: absolute;
+    top: 49px;
+
+    width: 0; height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid hsl(217, 19%, 35%);
+}
+
+@media all and (max-width: 720px)
+{
+    .share_content_desktop {display: none;}  
+    
+    .attribution{position: relative;}
+    
+    body
+    {
+        flex-direction: column;
+
+        height: auto;
+    }
+    main
+    {
+        flex-direction: column;
+
+        width: 90%;
+        height: auto;
+        min-width: 0px;
+        min-height: 0px;
+
+        margin-top: 20%;
+        overflow: hidden;
+    }
+    .img_drawers
+    {
+        height: 195px;
+        width: 100%;
+
+        background-position: 25% 25%;
+        border-radius: unset;
+    }
+    .right_pannel
+    {
+        width: 100%;
+    }
+    article
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: center;
+
+        width: 80%;
+        height: auto;
+
+        padding-top: 10%;
+        padding-bottom: 0%;
+    }
+    article h1
+    {
+        font-size: 1em;
+        line-height: 1.6em;
+
+        width: 100%;
+        margin-bottom: 6%;
+    }
+    article p
+    {
+        width: 98%;
+        margin-bottom: 12%;
+
+        font-size: small;
+        line-height: 1.5em;
+        text-align: left;
+    }
+    .author_pannel
+    {
+        align-self: center;
+
+        margin-bottom: 7%;
+        width: 80%;
+    }
+    .share_pannel
+    {
+        width: 100%;
+    }
+    .share_pannel_mobile
+    {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        
+        width: 100%;
+        height: auto;
+
+        padding-bottom: 0%;
+        padding-top: 0%;
+        margin-top: 0%;
+
+        background-color: hsl(217, 19%, 35%);
+    }
+    .share_content_mobile
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 80%;
+        height: 100%;
+
+        padding: 5%;
+        margin: 0%;
+    }
+    .share_btn_mobile
+    {
+        background-color: hsl(210, 46%, 95%);   
+        padding: 2%;
+        border-radius: 50%;
+    }
+}
