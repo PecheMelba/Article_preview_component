@@ -133,6 +133,11 @@ article p
     border-radius: 50%;
     background-color: hsl(210, 46%, 95%);
 }
+.share_btn:hover
+{
+    cursor: pointer;
+    background-color: hsl(0, 0%, 70%);
+}
 .share_pannel
 {
     display: none;
